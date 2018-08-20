@@ -93,7 +93,7 @@ public final class ScreencastDispatcher {
               (float) mRequest.maxHeight / (float) viewHeight);
           int destWidth = (int) (viewWidth * scale);
           int destHeight = (int) (viewHeight * scale);
-          mBitmap = Bitmap.createBitmap(destWidth, destHeight, Bitmap.Config.RGB_565);
+          mBitmap = Bitmap.createBitmap(destWidth, destHeight, Bitmap.Config.ARGB_8888);
           mCanvas = new Canvas(mBitmap);
           Matrix matrix = new Matrix();
           mTempSrc.set(0, 0, viewWidth, viewHeight);
